@@ -458,8 +458,10 @@ button:focus {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 100%;
+  opacity: 0;
   text-align: center;
   box-shadow: var(--color-accent) 5px 5px;
+  transition: opacity 300ms ease;
 }
 
 /* Footer */

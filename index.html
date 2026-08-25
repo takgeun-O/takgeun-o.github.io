@@ -37,7 +37,7 @@
     <header class="header">
       <div class="header__logo">
         <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
-        <h1 class="header__logo__title"><a href="#">Takgeun</a></h1>
+        <h1 class="header__logo__title"><a href="#">Takgeun&#39;s Portfolio</a></h1>
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
@@ -59,119 +59,195 @@
       <section id="home">
         <div class="home__container">
             <img class="home__avatar" src="images/profile.png" alt="Takgeun's profile" />
-            <h2 class="home__title">Hello <br />I&#39;m <strong class="home__title--strong">Takgeun-Oh</strong></h2>
-            <p class="home__description">Backend Developer with a Data-Driven Mindset</p>
-            <p class="home__description">I turn data and business requirements into reliable backend systems.</p>
-            <a class="home__contact" href="#contact">View my Work</a>
+            <h2 class="home__title">BACKEND DEVELOPER</h2>
+            <p class="home__description">데이터와 비즈니스 흐름을 이해하는 <br />백엔드 개발자 오탁근입니다.</p>
+            <p class="home__description"><br /> 데이터 운영 경험과 Java/Spring 기술을 바탕으로 <br />신뢰할 수 있는 서비스 구조를 만들고자 합니다.</p>
+            <a class="home__contact" href="#contact">개인 프로젝트 보기</a>
+            <a class="home__resume" href="#contact">이력서 보기</a>
         </div>
       </section>
       <!-- About -->
       <section id="about" class="section max-container">
-        <h2 class="title">About Me</h2>
+        <h2 class="title">ABOUT ME</h2>
         <p class="description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
-          harum adipisci reiciendis quos delectus id dicta officia quod voluptas
-          nulla odio inventore illum ducimus, illo maxime doloremque, quae,
-          dolore qui?
+          데이터와 비즈니스 요구사항을 안정적인 시스템으로 <br />구현하는 백엔드 개발자를 목표로 하고 있습니다. <br />
         </p>
         <ul class="majors">
           <li class="major">
             <i class="fa-brands fa-html5 major__icon"></i>
             <p class="major__title">Front-end</p>
-            <p>HTML, CSS, JavaScript, TypeScript, React, Next.js</p>
+            <p>HTML / CSS / JavaScript / TypeScript / React / Next.js</p>
           </li>
           <li class="major">
             <i class="fa-solid fa-server major__icon"></i>
             <p class="major__title">Back-end</p>
-            <p>Java, Spring, SpringBoot, JPA, QueryDSL</p>
+            <p>Java / Spring / SpringBoot / MyBatis / JPA / QueryDSL</p>
           </li>
           <li class="major">
             <i class="fa-solid fa-database major__icon"></i>
             <p class="major__title">Database</p>
-            <p>MySQL, Postgre</p>
+            <p>MySQL / PostgreSQL</p>
           </li>
         </ul>
-        <ul class="jobs">
-          <li class="job">
-            <img class="job__img"
-              src="images/school/sejong_uni_logo.png"
-              alt="sejong_uni_logo"
-            />
-            <div>
-              <p class="job__name">B.S. in Data Science, Sejong University</p>
-              <p class="job__period">2019 Mar - 2021 Aug</p>
+
+        <!-- Education -->
+         <section class="education" aria-labelledby="education-title">
+            <div class="education__heading">
+                <p class="education__eyebrow">MY JOURNEY</p>
+                <h3 id="education-title" class="education__title">
+                    Education &amp; Growth
+                </h3>
+                <p class="education__description">
+                    목표를 세우고 새로운 진로를 개척해 온 과정입니다.
+                </p>
             </div>
-          </li>
-          <li class="job">
-            <img class="job__img"
-              src="images/school/sejong_uni_logo.png"
-              alt="sejong_uni_logo"
-            />
-            <div>
-              <p class="job__name">B.S. in Data Science, Sejong University</p>
-              <p class="job__period">2019 Mar - 2021 Aug</p>
+
+            <div class="timeline__wrap">
+                <ol class="timeline">
+                    <li class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+
+                        <article class="timeline__content">
+                            <p class="timeline__step">01 · 새로운 진로 탐색</p>
+                            <h4 class="timeline__title">전문대학</h4>
+                            <p class="timeline__description">
+                                미래의 진로를 다시 설계하기 위해 기존 과정을 중단하고,
+                                학사편입이라는 새로운 목표를 세웠습니다.
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <article class="timeline__content">
+                            <p class="timeline__step">02 · 목표를 향한 실행</p>
+                            <h4 class="timeline__title">학점은행제</h4>
+                            <p class="timeline__description">
+                                온라인 강의와 학점인정 자격증, 독학사를 병행하여
+                                최단기간 루트로 2년 만에 학사편입 요건을 충족했습니다.
+                            </p>
+
+                            <ul class="timeline__tags" aria-label="학점은행제 주요 과정">
+                                <li>온라인 강의</li>
+                                <li>자격증</li>
+                                <li>독학사</li>
+                            </ul>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <article class="timeline__content">
+                            <p class="timeline__step">03 · 데이터 역량 확장</p>
+                            <h4 class="timeline__title">세종대학교 데이터사이언스학과</h4>
+                            <p class="timeline__description">
+                                학사편입 후 데이터 분석과 소프트웨어에 관한 기반 지식을
+                                학습했습니다.
+                            </p>
+
+                            <ul class="timeline__tags" aria-label="전공 학습 분야">
+                                <li>Data Science</li>
+                                <li>Statistics</li>
+                                <li>Software</li>
+                            </ul>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <article class="timeline__content">
+                            <p class="timeline__step">04 · 백엔드 개발자로의 전환</p>
+                            <h4 class="timeline__title">Backend Development</h4>
+                            <p class="timeline__description">
+                                Java·Spring 교육과 개인 프로젝트를 통해 비즈니스 요구사항을
+                                백엔드 시스템으로 구현하는 역량을 쌓고 있습니다.
+                            </p>
+
+                            <ul class="timeline__tags" aria-label="백엔드 기술">
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>MyBatis</li>
+                                <li>JPA</li>
+                                <li>QueryDSL</li>
+                                <li>RESTful API</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ol>
             </div>
-          </li>
-        </ul>
+         </section>
+
       </section>
+      
       <!-- Skills -->
       <section id="skills" class="section">
         <div class="max-container">
             <h2 class="title">My Skills</h2>
-        <p class="description">Skills & Attributes</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          doloremque deserunt nesciunt blanditiis et corrupti sunt rerum
-          consequatur, officiis ea exercitationem. Tempora deleniti aliquam
-          exercitationem at, quo illum natus dolore.
-        </p>
-        <div class="skills">
-          <sectionc class="skills__coding">
-            <h3 class="skills__title">Coding Skills</h3>
-            <ul>
-              <li class="bar">
-                <div class="bar__metadata"><span>HTML</span><span>98%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata"><span>CSS</span><span>90%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata"><span>JavaScript</span><span>90%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata"><span>TypeScript</span><span>80%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 80%"></div></div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata"><span>React</span><span>79%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 79%"></div></div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata"><span>NodeJS</span><span>68%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 68%"></div></div>
-              </li>
-            </ul>
-          </sectionc>
-          <section class="skills__tools">
-            <h3 class="skills__title">Tools</h3>
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>IntelliJ</li>
-              <li>Android Studio Code</li>
-            </ul>
-          </section>
-          <section class="skills__etc">
-            <h3 class="skills__title">Etc</h3>
-            <ul>
-              <li>Git</li>
-              <li>Scrum Master</li>
-              <li>Math</li>
-            </ul>
-          </section>
-        </div>
+            <p class="description">Backend-focused, Frontend-capable</p>
+            <p class="skills__introduction">
+                Java와 Spring Boot를 중심으로 비즈니스 요구사항을 <br />
+                안정적인 백엔드 시스템과 REST API로 구현합니다. <br /><br />
+                JPA와 QueryDSL을 활용한 데이터 접근과 동적 쿼리를 다룰 수 있으며, <br />
+                Frontend 관련 기술 스택을 활용한 화면 구성과 API 연동도 가능합니다. <br />
+            </p>
+            <div class="skills">
+            <section class="skills__coding">
+                <h3 class="skills__title">Coding Skills</h3>
+                <ul>
+                <li class="bar">
+                    <div class="bar__metadata"><span>HTML</span><span>98%</span></div>
+                    <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
+                </li>
+                <li class="bar">
+                    <div class="bar__metadata"><span>CSS</span><span>90%</span></div>
+                    <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
+                </li>
+                <li class="bar">
+                    <div class="bar__metadata"><span>JavaScript</span><span>90%</span></div>
+                    <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
+                </li>
+                <li class="bar">
+                    <div class="bar__metadata"><span>TypeScript</span><span>80%</span></div>
+                    <div class="bar__bg"><div class="bar__value" style="width: 80%"></div></div>
+                </li>
+                <li class="bar">
+                    <div class="bar__metadata"><span>React</span><span>79%</span></div>
+                    <div class="bar__bg"><div class="bar__value" style="width: 79%"></div></div>
+                </li>
+                <li class="bar">
+                    <div class="bar__metadata"><span>NodeJS</span><span>68%</span></div>
+                    <div class="bar__bg"><div class="bar__value" style="width: 68%"></div></div>
+                </li>
+                </ul>
+            </section>
+            <section class="skills__tools">
+                <h3 class="skills__title">Tools</h3>
+                <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ</li>
+                <li>Android Studio Code</li>
+                </ul>
+            </section>
+            <section class="skills__etc">
+                <h3 class="skills__title">Etc</h3>
+                <ul>
+                <li>Git</li>
+                <li>Scrum Master</li>
+                <li>Math</li>
+                </ul>
+            </section>
+            </div>
         </div>
       </section>
       <!-- Work -->
@@ -199,7 +275,7 @@
               <img src="images/projects/project1.webp" alt="project1" class="project__img"/>
               <div class="project__metadata">
                 <h3 class="project__title">Project #1</h3>
-                <p>Clone Coding with HTML, CSS</p>
+                <p>Clone Coding with HTML / CSS</p>
               </div>
             </a>
           </li>
@@ -208,7 +284,7 @@
               <img src="images/projects/project2.webp" alt="project2" class="project__img"/>
               <div class="project__metadata">
                 <h3 class="project__title">Project #2</h3>
-                <p>Clone Coding with HTML, CSS</p>
+                <p>Clone Coding with HTML / CSS</p>
               </div>
             </a>
           </li>
@@ -217,7 +293,7 @@
               <img src="images/projects/project3.webp" alt="project3" class="project__img"/>
               <div class="project__metadata">
                 <h3 class="project__title">Project #3</h3>
-                <p>Clone Coding with HTML, CSS</p>
+                <p>Clone Coding with HTML / CSS</p>
               </div>
             </a>
           </li>
@@ -226,7 +302,7 @@
               <img src="images/projects/project4.webp" alt="project4" class="project__img"/>
               <div class="project__metadata">
                 <h3 class="project__title">Project #4</h3>
-                <p>Clone Coding with HTML, CSS</p>
+                <p>Clone Coding with HTML / CSS</p>
               </div>
             </a>
           </li>
@@ -235,7 +311,7 @@
               <img src="images/projects/project5.webp" alt="project5" class="project__img"/>
               <div class="project__metadata">
                 <h3 class="project__title">Project #5</h3>
-                <p>Clone Coding with HTML, CSS</p>
+                <p>Clone Coding with HTML / CSS</p>
               </div>
             </a>
           </li>
@@ -244,7 +320,7 @@
               <img src="images/projects/project6.webp" alt="project6" class="project__img"/>
               <div class="project__metadata">
                 <h3 class="project__title">Project #6</h3>
-                <p>Clone Coding with HTML, CSS</p>
+                <p>Clone Coding with HTML / CSS</p>
               </div>
             </a>
           </li>
@@ -253,7 +329,7 @@
               <img src="images/projects/project7.webp" alt="project7" class="project__img"/>
               <div class="project__metadata">
                 <h3 class="project__title">Project #7</h3>
-                <p>Clone Coding with HTML, CSS</p>
+                <p>Clone Coding with HTML / CSS</p>
               </div>
             </a>
           </li>
@@ -262,7 +338,7 @@
               <img src="images/projects/project8.webp" alt="project8" class="project__img"/>
               <div class="project__metadata">
                 <h3 class="project__title">Project #8</h3>
-                <p>Clone Coding with HTML, CSS</p>
+                <p>Clone Coding with HTML / CSS</p>
               </div>
             </a>
           </li>
@@ -278,9 +354,9 @@
             <img src="images/testimonials/people1.webp" alt="people1" class="testimonial__img"/>
             <div class="testimonial__bubble">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
-                praesentium. Culpa deleniti tempore et, doloremque, hic corporis
-                totam mollitia odio cupiditate dolorum, numquam fuga corrupti
+                Lorem ipsum dolor sit amet / consectetur adipisicing elit. Nisi,
+                praesentium. Culpa deleniti tempore et / doloremque / hic corporis
+                totam mollitia odio cupiditate dolorum / numquam fuga corrupti
                 iste repellat perspiciatis ut esse!
               </p>
               <p><a href="#" class="testimonial__bubble__name">James Kim</a> /Google</p>
@@ -290,9 +366,9 @@
             <img src="images/testimonials/people2.webp" alt="people2" class="testimonial__img"/>
             <div class="testimonial__bubble">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
-                praesentium. Culpa deleniti tempore et, doloremque, hic corporis
-                totam mollitia odio cupiditate dolorum, numquam fuga corrupti
+                Lorem ipsum dolor sit amet / consectetur adipisicing elit. Nisi,
+                praesentium. Culpa deleniti tempore et / doloremque / hic corporis
+                totam mollitia odio cupiditate dolorum / numquam fuga corrupti
                 iste repellat perspiciatis ut esse!
               </p>
               <p><a href="#" class="testimonial__bubble__name">James Kim</a> /Google</p>
@@ -301,9 +377,9 @@
             <img src="images/testimonials/people3.webp" alt="people3" class="testimonial__img"/>
             <div class="testimonial__bubble">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
-                praesentium. Culpa deleniti tempore et, doloremque, hic corporis
-                totam mollitia odio cupiditate dolorum, numquam fuga corrupti
+                Lorem ipsum dolor sit amet / consectetur adipisicing elit. Nisi,
+                praesentium. Culpa deleniti tempore et / doloremque / hic corporis
+                totam mollitia odio cupiditate dolorum / numquam fuga corrupti
                 iste repellat perspiciatis ut esse!
               </p>
               <p><a href="#" class="testimonial__bubble__name">James Kim</a> /Google</p>

@@ -39,8 +39,10 @@ ul {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -73,6 +75,8 @@ button:focus {
 .title {
   font-size: 2.5rem;
   margin: 1rem 0;
+  text-align: left;
+  margin-bottom: 3rem;
 }
 
 .description {
@@ -189,6 +193,22 @@ button:focus {
   outline: 2px solid var(--color-accent);
 }
 
+.home__resume {
+  display: inline-block;
+  background-color: var(--color-accent);
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  font-weight: bold;
+  color: var(--color-black);
+  border-radius: 4px;
+}
+
+.home__resume:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
+}
+
 /* About */
 .majors {
   display: flex;
@@ -250,6 +270,140 @@ button:focus {
 .job__period {
   color: var(--color-primary);
   font-size: 0.8rem;
+}
+
+.education {
+  margin-top: 6rem;
+  padding-top: 5rem;
+  border-top: 1px solid rgba(5, 10, 19, 0.12);
+  text-align: center;
+}
+
+.education__heading {
+  margin-bottom: 3rem;
+}
+
+.education__eyebrow {
+  margin-bottom: 0.5rem;
+  color: #009aaa;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.education__title {
+  margin: 0 0 0.75rem;
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.education__description {
+  color: #5f6673;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Timeline */
+.timeline__wrap {
+  text-align: left;
+}
+
+.timeline {
+  position: relative;
+  isolation: isolate; /* 내부 요소들끼리 경쟁하도록 제한(마커들이 헤더 침범하는 거 방지) */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 2px;
+  background-color: rgba(3, 232, 249, 0.35);
+}
+
+.timeline__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  column-gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+  font-size: 1rem;
+  box-shadow: 0 0 0 6px var(--color-white);
+}
+
+.timeline__content {
+  padding: 1.5rem;
+  border: 1px solid rgba(5, 10, 19, 0.08);
+  border-radius: 0.75rem;
+  background-color: var(--color-white);
+  box-shadow: 0 10px 30px rgba(5, 10, 19, 0.08);
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease,
+    border-color 250ms ease;
+}
+
+.timeline__content:hover {
+  transform: translateY(-4px);
+  border-color: rgba(3, 232, 249, 0.7);
+  box-shadow: 0 16px 35px rgba(5, 10, 19, 0.13);
+}
+
+.timeline__step {
+  margin-bottom: 0.4rem;
+  color: #009aaa;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.timeline__title {
+  margin: 0 0 0.75rem;
+  color: var(--color-primary);
+  font-size: 1.3rem;
+}
+
+.timeline__description {
+  color: #4f5663;
+  line-height: 1.7;
+  word-break: keep-all; /* 가급적 띄어쓰기 단위로 줄바꿈 */
+}
+
+.timeline__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.timeline__tags li {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background-color: rgba(3, 232, 249, 0.12);
+  color: #007e8b;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 /* Skills */
@@ -562,6 +716,40 @@ button:focus {
   .major {
     max-width: 25rem;
     width: 100%;
+  }
+
+  .education {
+    margin-top: 4rem;
+    padding-top: 3.5rem;
+  }
+
+  .education__title {
+    font-size: 1.7rem;
+  }
+
+  .timeline::before {
+    left: 1.25rem;
+  }
+
+  .timeline__item {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    column-gap: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .timeline__marker {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.85rem;
+    box-shadow: 0 0 0 4px var(--color-white);
+  }
+
+  .timeline__content {
+    padding: 1.25rem;
+  }
+
+  .timeline__title {
+    font-size: 1.15rem;
   }
 
   .job {

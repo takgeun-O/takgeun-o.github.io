@@ -11,7 +11,7 @@ const sectionIds = [
   "#about",
   "#skills",
   "#work",
-  "#testimonial",
+  "#qualifications",
   "#contact",
 ];
 
